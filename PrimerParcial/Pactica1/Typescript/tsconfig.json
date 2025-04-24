@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es2020",               // mejor versión que es2016
+    "module": "commonjs",
+    "rootDir": "src",                 // carpeta donde están tus archivos .ts
+    "outDir": "dist",                 // carpeta donde se generará el JS
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  }
+}
