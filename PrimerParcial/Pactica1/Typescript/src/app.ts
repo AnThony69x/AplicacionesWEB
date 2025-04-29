@@ -25,7 +25,7 @@ suma(2, 3);
 // Practica del día 28/04/2025
 console.log('\nPractica del dia 28 de abril');
 
-
+//Objeto student
 const student = {
     id: 1234, 
     name: 'Anthony Mejia',
@@ -41,7 +41,7 @@ interface Istudent {
     direccion: string
 }
 
-// Creamos un arreglo de estudiantes que cumplen con la interfaz
+// Arreglo de estudiantes
 const estudiantes: Istudent[] = [
     {
         id: 1234, 
@@ -57,16 +57,20 @@ const estudiantes: Istudent[] = [
     },
 ];
 
+//Agregar manualmente estudiantes
 estudiantes.push({id: 91011, name: 'Juan Perez', correo:'juan@gmail.xom', direccion: 'su casa'});
 estudiantes.push(student);
 
+//Funcion Agregar
 function Agregar(estudiante: Istudent): void {
     estudiantes.push(estudiante);
 } 
 
+//Agregamos estuante vacio
 const estudiante1: Istudent = {id:432, name:'', correo:'', direccion:''};
 Agregar(estudiante1);
 
+//Funcion Agregar2 con Callback
 function Agregar2(parm:Istudent, callback:(estudiate:Istudent) => void): void {
     estudiantes.push(parm);
     callback(parm);
@@ -78,6 +82,7 @@ Agregar2(estudianteA2, (estudiante) => {
     console.log(`Estudiante agregado: ${estudiante.name}`);
 });
 
+//Funcion Agregar3 con Promise
 function Agregar3(parm:Istudent): Promise<Istudent> {
     return new Promise((resolve)=> {
         estudiantes.push(parm);
@@ -97,6 +102,7 @@ console.log(student);
 })
 */
 
+//Uso de la funcion Agregar3 con async/await
 async function main() {
     try{
         await Agregar3(estudiante1)
