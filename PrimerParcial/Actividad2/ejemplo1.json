@@ -1,0 +1,48 @@
+{
+"factura1":    
+{
+    "factura":{
+        "numero": "F12345",
+        "cliente":{
+            "nombre" : "Carlos Chile",
+            "identificacion" : "019293425"
+        },
+        "items" : [
+            {"descripcion": "Camisa", "cantidad": 2, "precio": 25.00},
+            {"descripcion": "Pantalón", "cantidad": 1, "precio": 40.00}
+        ],
+        "total": 90.00
+    }
+}
+,
+"estudiante1":{
+    "Estudiante" : {
+        "id" : 5,
+        "Nombre" : "Carlos Silva",
+        "Identificador" : 12345678,
+        "Tutor" : {
+            "id" : 3,
+            "Nombre" : "William",
+            "Identidicador" : 123456
+        },
+        "Notas" : [
+            {"Asigantura": "Matematicas", "Nota": 10},
+            {"Asigantura": "Lengua", "Nota": 8},
+            {"Asigantura": "Ingles", "Nota": 6}
+        ],
+        "Direccion" : {
+            "Calle" : "Calle 123",
+            "Numero" : 123,
+            "Colonia" : "Colonia 123",
+            "Ciudad" : "Ciudad 123",
+            "Estado" : "Estado 123",
+            "Pais" : "Pais 123",
+            "CodigoPostal" : 12345
+        }
+    }
+}
+}
+
+
+
+

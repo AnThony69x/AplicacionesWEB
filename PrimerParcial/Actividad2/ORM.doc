@@ -1,0 +1,43 @@
+Que es un ORM?
+-Object Relational Mapping
+-Orientado a  Objectos
+-Ahorra codigo
+
+Ventajas de los ORM
+-Abstacion
+-Portabilidad
+-Productividad
+-Seguridad
+
+Cuando evitar un ORM
+-Consultas complejas
+-Alto rendimiento
+-BD heredadas 
+-Control total
+
+ORMs en Node.js
+-Node.js Backend
+-Acceso simplificado
+-Principales opciones
+
+Prisma(Node.js)
+-Enfoque TypeScript 
+-Archivo.Prisma
+-Cliente automatico 
+
+Como instalarla
+instalacin
+npm install prisma --save-dev
+npx prisma init
+
+Modelo User
+Campos: id, name, email
+
+Configuracion
+.env gestiona conexion a BD
+
+Sequelize 3 instalacion y Modelo
+instalacion
+npm install squelize mysql2
+
+TypeORM
