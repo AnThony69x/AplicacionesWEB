@@ -1,0 +1,38 @@
+{
+  "name": "07-restweb",
+  "version": "1.0.0",
+  "description": "1. Clonar el .env.template y crear el .env\r 2. Ejecutar el comando ```docker compose up -d```\r 3. Reconstruir el prisma client ```npm run prisma:migrate:prod```",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc && npm run prisma:migrate:prod",
+    "start": "node dist/app.js",
+    "prisma:migrate:prod": "prisma migrate deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/compression": "^1.7.3",
+    "@types/cors": "^2.8.18",
+    "@types/express": "^4.17.22",
+    "@types/node": "^20.17.57",
+    "prisma": "^5.2.0",
+    "rimraf": "^5.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.2.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "env-var": "^7.4.1",
+    "express": "^4.21.2",
+    "pg": "^8.16.0",
+    "reflect-metadata": "^0.2.2",
+    "sequelize": "^6.37.7",
+    "typeorm": "^0.3.24"
+  },
+  "type": "commonjs"
+}
