@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "title": "Inception",
+    "description": "A thief who steals corporate secrets through dream-sharing technology...",
+    "duration": 148,
+    "genre": "Sci-Fi",
+    "rating": "PG-13",
+    "posterUrl": "/inception.jpg",
+    "isActive": true
+  },
+  {
+    "id": "2",
+    "title": "The Matrix",
+    "description": "A computer hacker learns from mysterious rebels about the true nature of his reality...",
+    "duration": 136,
+    "genre": "Sci-Fi",
+    "rating": "R",
+    "posterUrl": "/matrix.jpg",
+    "isActive": true
+  },
+  {
+    "id": "3",
+    "title": "Titanic",
+    "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist...",
+    "duration": 195,
+    "genre": "Drama",
+    "rating": "PG-13",
+    "posterUrl": "/titanic.jpg",
+    "isActive": false
+  }
+]
