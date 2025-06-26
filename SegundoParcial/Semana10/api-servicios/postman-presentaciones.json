@@ -11,7 +11,7 @@
       "request": {
         "method": "POST",
         "header": [{"key":"Content-Type","value":"application/json"}],
-        "url": { "raw": "http://localhost:3000/api/presentaciones", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "presentaciones"] },
+        "url": { "raw": "http://localhost:3000/api/v1/presentaciones", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "v1", "presentaciones"] },
         "body": {
           "mode": "raw",
           "raw": "{\n  \"titulo\": \"API REST\",\n  \"descripcion\": \"Presentación de ejemplo\",\n  \"fecha\": \"2025-06-25\",\n  \"usuarioId\": 1\n}"
@@ -23,7 +23,7 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": { "raw": "http://localhost:3000/api/presentaciones", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "presentaciones"] }
+        "url": { "raw": "http://localhost:3000/api/v1/presentaciones", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "v1", "presentaciones"] }
       }
     },
     {
@@ -31,7 +31,7 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": { "raw": "http://localhost:3000/api/presentaciones/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "presentaciones", "1"] }
+        "url": { "raw": "http://localhost:3000/api/v1/presentaciones/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "v1", "presentaciones", "1"] }
       }
     },
     {
@@ -39,7 +39,7 @@
       "request": {
         "method": "PATCH",
         "header": [{"key":"Content-Type","value":"application/json"}],
-        "url": { "raw": "http://localhost:3000/api/presentaciones/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "presentaciones", "1"] },
+        "url": { "raw": "http://localhost:3000/api/v1/presentaciones/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "v1", "presentaciones", "1"] },
         "body": { "mode": "raw", "raw": "{\n  \"titulo\": \"API REST Actualizada\"\n}" }
       }
     },
@@ -48,7 +48,7 @@
       "request": {
         "method": "DELETE",
         "header": [],
-        "url": { "raw": "http://localhost:3000/api/presentaciones/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "presentaciones", "1"] }
+        "url": { "raw": "http://localhost:3000/api/v1/presentaciones/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "v1", "presentaciones", "1"] }
       }
     }
   ]

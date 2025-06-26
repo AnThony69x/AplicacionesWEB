@@ -11,7 +11,7 @@
       "request": {
         "method": "POST",
         "header": [{"key":"Content-Type","value":"application/json"}],
-        "url": { "raw": "http://localhost:3000/api/slides", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "slides"] },
+        "url": { "raw": "http://localhost:3000/api/v1/slides", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "v1", "slides"] },
         "body": {
           "mode": "raw",
           "raw": "{\n  \"titulo\": \"Introducción\",\n  \"contenido\": \"Bienvenidos a la presentación\",\n  \"orden\": 1,\n  \"presentacionId\": 1\n}"
@@ -23,7 +23,7 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": { "raw": "http://localhost:3000/api/slides", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "slides"] }
+        "url": { "raw": "http://localhost:3000/api/v1/slides", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "v1", "slides"] }
       }
     },
     {
@@ -31,7 +31,7 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": { "raw": "http://localhost:3000/api/slides/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "slides", "1"] }
+        "url": { "raw": "http://localhost:3000/api/v1/slides/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "v1", "slides", "1"] }
       }
     },
     {
@@ -39,7 +39,7 @@
       "request": {
         "method": "PATCH",
         "header": [{"key":"Content-Type","value":"application/json"}],
-        "url": { "raw": "http://localhost:3000/api/slides/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "slides", "1"] },
+        "url": { "raw": "http://localhost:3000/api/v1/slides/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "v1", "slides", "1"] },
         "body": { "mode": "raw", "raw": "{\n  \"titulo\": \"Introducción Modificada\"\n}" }
       }
     },
@@ -48,7 +48,7 @@
       "request": {
         "method": "DELETE",
         "header": [],
-        "url": { "raw": "http://localhost:3000/api/slides/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "slides", "1"] }
+        "url": { "raw": "http://localhost:3000/api/v1/slides/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "v1", "slides", "1"] }
       }
     }
   ]

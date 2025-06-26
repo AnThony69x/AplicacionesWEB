@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
 import { PresentacionesService } from './presentaciones.service';
 import { PresentacionesController } from './presentaciones.controller';
-import { Presentacione } from './entities/presentacione.entity';
+import { Presentacion } from './entities/presentacione.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Presentacione])],
+  imports: [TypeOrmModule.forFeature([Presentacion])],
   controllers: [PresentacionesController],
   providers: [PresentacionesService],
   exports: [TypeOrmModule],

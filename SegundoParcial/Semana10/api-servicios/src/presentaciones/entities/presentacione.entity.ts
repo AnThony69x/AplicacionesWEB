@@ -1,18 +1,19 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
 @Entity()
-export class Presentacione {
+export class Presentacion {
+
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column()
+    @Column({ length: 100 })
     titulo: string;
 
-    @Column()
+    @Column({ length: 500 })
     descripcion: string;
 
-    @Column()
-    fecha: string;
+    @Column({ type: 'date' })
+    fecha: string; 
 
     @Column()
     usuarioId: number;

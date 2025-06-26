@@ -1,15 +1,15 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Presentacione } from './entities/presentacione.entity';
+import { Presentacion } from './entities/presentacione.entity';
 import { CreatePresentacioneDto } from './dto/create-presentacione.dto';
 import { UpdatePresentacioneDto } from './dto/update-presentacione.dto';
 
 @Injectable()
 export class PresentacionesService {
   constructor(
-    @InjectRepository(Presentacione)
-    private presnsetacionesRepository: Repository<Presentacione>,
+    @InjectRepository(Presentacion)
+    private presnsetacionesRepository: Repository<Presentacion>,
   ) {}
 
   create(createPresentacioneDto: CreatePresentacioneDto) {
