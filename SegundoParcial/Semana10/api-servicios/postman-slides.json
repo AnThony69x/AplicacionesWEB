@@ -1,0 +1,55 @@
+{
+  "info": {
+    "name": "Slides API",
+    "_postman_id": "slides-coleccion-1234",
+    "description": "Colección para probar la entidad Slides",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Crear Slide",
+      "request": {
+        "method": "POST",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "url": { "raw": "http://localhost:3000/api/slides", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "slides"] },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titulo\": \"Introducción\",\n  \"contenido\": \"Bienvenidos a la presentación\",\n  \"orden\": 1,\n  \"presentacionId\": 1\n}"
+        }
+      }
+    },
+    {
+      "name": "Obtener Todos los Slides",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://localhost:3000/api/slides", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "slides"] }
+      }
+    },
+    {
+      "name": "Obtener Slide por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://localhost:3000/api/slides/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "slides", "1"] }
+      }
+    },
+    {
+      "name": "Actualizar Slide",
+      "request": {
+        "method": "PATCH",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "url": { "raw": "http://localhost:3000/api/slides/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "slides", "1"] },
+        "body": { "mode": "raw", "raw": "{\n  \"titulo\": \"Introducción Modificada\"\n}" }
+      }
+    },
+    {
+      "name": "Eliminar Slide",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": { "raw": "http://localhost:3000/api/slides/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "slides", "1"] }
+      }
+    }
+  ]
+}

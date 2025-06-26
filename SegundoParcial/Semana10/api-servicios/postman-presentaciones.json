@@ -1,0 +1,55 @@
+{
+  "info": {
+    "name": "Presentaciones API",
+    "_postman_id": "presentaciones-coleccion-1234",
+    "description": "Colección para probar la entidad Presentaciones",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Crear Presentación",
+      "request": {
+        "method": "POST",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "url": { "raw": "http://localhost:3000/api/presentaciones", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "presentaciones"] },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titulo\": \"API REST\",\n  \"descripcion\": \"Presentación de ejemplo\",\n  \"fecha\": \"2025-06-25\",\n  \"usuarioId\": 1\n}"
+        }
+      }
+    },
+    {
+      "name": "Obtener Todas las Presentaciones",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://localhost:3000/api/presentaciones", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "presentaciones"] }
+      }
+    },
+    {
+      "name": "Obtener Presentación por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://localhost:3000/api/presentaciones/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "presentaciones", "1"] }
+      }
+    },
+    {
+      "name": "Actualizar Presentación",
+      "request": {
+        "method": "PATCH",
+        "header": [{"key":"Content-Type","value":"application/json"}],
+        "url": { "raw": "http://localhost:3000/api/presentaciones/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "presentaciones", "1"] },
+        "body": { "mode": "raw", "raw": "{\n  \"titulo\": \"API REST Actualizada\"\n}" }
+      }
+    },
+    {
+      "name": "Eliminar Presentación",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": { "raw": "http://localhost:3000/api/presentaciones/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "presentaciones", "1"] }
+      }
+    }
+  ]
+}
