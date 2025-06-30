@@ -12,7 +12,7 @@ La API gestiona tres entidades principales: **Usuarios**, **Presentaciones** y *
 1. **Clona el repositorio:**
 
 ```bash
-git clone https://github.com/AnThony69x/AplicacionesWEB/tree/80943c05be073de2679d9cba49014041488cc501/SegundoParcial/Semana10
+git clone https://github.com/AnThony69x/AplicacionesWEB/tree/main/SegundoParcial/Semana10/api-servicios
 
 cd api-servicios
 ```
