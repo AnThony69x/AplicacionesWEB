@@ -1,0 +1,82 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Usuario {
+  """ID del usuario"""
+  id: ID!
+  name: String!
+  email: String!
+}
+
+type Presentacion {
+  """ID de la presentación"""
+  id: ID!
+  title: String!
+  description: String!
+  autorId: String
+  autor: Usuario
+}
+
+type Slide {
+  """ID del usuario"""
+  id: ID!
+  title: String!
+  content: String!
+}
+
+type Query {
+  usuarios: [Usuario!]!
+  usuario(id: String!): Usuario!
+  presentaciones: [Presentacion!]!
+  presentacion(id: String!): Presentacion!
+  slides: [Slide!]!
+  slide(id: String!): Slide!
+}
+
+type Mutation {
+  createUsuario(createUsuarioInput: CreateUsuarioInput!): Usuario!
+  updateUsuario(updateUsuarioInput: UpdateUsuarioInput!): Usuario!
+  removeUsuario(id: String!): Usuario!
+  createPresentacion(createPresentacionInput: CreatePresentacionInput!): Presentacion!
+  updatePresentacion(updatePresentacionInput: UpdatePresentacionInput!): Presentacion!
+  removePresentacion(id: String!): Presentacion!
+  createSlide(createSlideInput: CreateSlideInput!): Slide!
+  updateSlide(updateSlideInput: UpdateSlideInput!): Slide!
+  removeSlide(id: String!): Slide!
+}
+
+input CreateUsuarioInput {
+  name: String!
+  email: String!
+}
+
+input UpdateUsuarioInput {
+  name: String
+  email: String
+  id: ID!
+}
+
+input CreatePresentacionInput {
+  title: String!
+  description: String!
+  autorId: String
+}
+
+input UpdatePresentacionInput {
+  title: String
+  description: String
+  autorId: String
+  id: ID!
+}
+
+input CreateSlideInput {
+  title: String!
+  content: String!
+}
+
+input UpdateSlideInput {
+  title: String
+  content: String
+  id: ID!
+}
