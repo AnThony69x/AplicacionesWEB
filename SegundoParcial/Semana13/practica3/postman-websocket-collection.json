@@ -1,0 +1,138 @@
+{
+  "info": {
+    "name": "CRUD WebSocket - Práctica 3",
+    "description": "Colección de Postman para probar WebSockets con las tres entidades",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "WebSocket Connection",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "ws://localhost:3000",
+          "protocol": "ws",
+          "host": ["localhost"],
+          "port": "3000"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "// Conexión WebSocket establecida"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Usuario - Crear",
+      "request": {
+        "description": "Crear un nuevo usuario",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"event\": \"crearUsuario\",\n  \"data\": {\n    \"nombre\": \"Juan Pérez\",\n    \"correo\": \"juan@email.com\",\n    \"password\": \"123456\",\n    \"rol\": \"estudiante\"\n  }\n}"
+        }
+      }
+    },
+    {
+      "name": "Usuario - Listar Todos",
+      "request": {
+        "description": "Obtener lista de todos los usuarios",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"event\": \"listarUsuarios\",\n  \"data\": {}\n}"
+        }
+      }
+    },
+    {
+      "name": "Usuario - Obtener por ID",
+      "request": {
+        "description": "Obtener un usuario específico por ID",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"event\": \"obtenerUsuario\",\n  \"data\": {\n    \"id\": 1\n  }\n}"
+        }
+      }
+    },
+    {
+      "name": "Usuario - Actualizar",
+      "request": {
+        "description": "Actualizar datos de un usuario",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"event\": \"actualizarUsuario\",\n  \"data\": {\n    \"id\": 1,\n    \"updateUsuarioDto\": {\n      \"nombre\": \"Juan Carlos Pérez\",\n      \"rol\": \"docente\"\n    }\n  }\n}"
+        }
+      }
+    },
+    {
+      "name": "Usuario - Eliminar",
+      "request": {
+        "description": "Eliminar un usuario",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"event\": \"eliminarUsuario\",\n  \"data\": {\n    \"id\": 1\n  }\n}"
+        }
+      }
+    },
+    {
+      "name": "Presentación - Crear",
+      "request": {
+        "description": "Crear una nueva presentación",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"event\": \"crearPresentacion\",\n  \"data\": {\n    \"titulo\": \"Introducción a WebSockets\",\n    \"descripcion\": \"Presentación sobre comunicación en tiempo real\",\n    \"autorId\": 1\n  }\n}"
+        }
+      }
+    },
+    {
+      "name": "Presentación - Listar Todas",
+      "request": {
+        "description": "Obtener lista de todas las presentaciones",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"event\": \"listarPresentaciones\",\n  \"data\": {}\n}"
+        }
+      }
+    },
+    {
+      "name": "Presentación - Obtener por ID",
+      "request": {
+        "description": "Obtener una presentación específica",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"event\": \"obtenerPresentacion\",\n  \"data\": {\n    \"id\": 1\n  }\n}"
+        }
+      }
+    },
+    {
+      "name": "Slide - Crear",
+      "request": {
+        "description": "Crear un nuevo slide",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"event\": \"crearSlide\",\n  \"data\": {\n    \"titulo\": \"¿Qué son los WebSockets?\",\n    \"contenido\": \"Los WebSockets permiten comunicación bidireccional en tiempo real entre cliente y servidor\",\n    \"orden\": 1,\n    \"presentacionId\": 1\n  }\n}"
+        }
+      }
+    },
+    {
+      "name": "Slide - Listar Todos",
+      "request": {
+        "description": "Obtener lista de todos los slides",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"event\": \"listarSlides\",\n  \"data\": {}\n}"
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "ws://localhost:3000"
+    }
+  ]
+}
